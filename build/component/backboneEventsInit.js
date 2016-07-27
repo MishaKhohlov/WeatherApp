@@ -1,0 +1,1 @@
+export var gEvent = Object.assign({}, Backbone.Events);

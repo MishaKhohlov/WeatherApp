@@ -1,0 +1,118 @@
+.setting_degrees {
+    overflow: hidden;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.25);
+    padding: 20px 0;
+}
+
+.setting_degrees__wrap {
+    position: relative;
+    float: left;
+}
+
+.setting_degrees__radio_but_1, .setting_degrees__radio_but_2 {
+    display: none;
+}
+
+.setting_degrees__radio_lab_1, .setting_degrees__radio_lab_2 {
+    cursor: pointer;
+    display: inline-block;
+    opacity: 0.25;
+    transition: 0.3s linear all;
+    font-size: 2.5em;
+}
+
+.setting_degrees__radio_lab_1 {
+    padding-right: 47px;
+}
+
+.setting_degrees__radio_lab_2 {
+    margin-left: 39px;
+}
+
+.setting_degrees__radio_but_1:checked + .setting_degrees__radio_lab_1 {
+    opacity: 1;
+}
+
+.setting_degrees__radio_but_2:checked + .setting_degrees__radio_lab_2 {
+    opacity: 1;
+}
+
+.setting_degrees__wrap_line {
+    display: inline-block;
+    height: 52px;
+    background: white;
+    opacity: 0.25;
+    width: 2px;
+    position: absolute;
+}
+
+.setting_degrees__icon {
+    margin-top: 14px;
+    float: right;
+    font-size: 2.4em;
+    margin-right: 50px;
+}
+@media (min-width: 375px) and (max-width: 1230px), (max-height: 900px) {
+    .setting_degrees {
+        overflow: hidden;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.25);
+        padding: 19px 0;
+    }
+
+    .setting_degrees__radio_lab_1 {
+        padding-right: 37px;
+    }
+
+    .setting_degrees__radio_lab_2 {
+        margin-left: 29px;
+    }
+
+    .setting_degrees__wrap_line {
+        height: 40px;
+    }
+
+    .setting_degrees__icon {
+        margin-top: 10px;
+        font-size: 2em;
+        margin-right: 30px;
+    }
+}
+@media (min-width: 375px) and (max-width: 780px) {
+    .setting_degrees__icon {
+        margin-right: 15px;
+    }
+}
+@media (min-width: 626px) and (max-width: 740px) {
+    .setting_degrees {
+        padding: 8px 0;
+    }
+
+    .setting_degrees__radio_lab_1 {
+        padding-right: 33px;
+    }
+
+    .setting_degrees__radio_lab_2 {
+        margin-left: 19px;
+    }
+
+    .setting_degrees__wrap_line {
+        height: 30px;
+    }
+
+    .setting_degrees__icon {
+        margin-top: 5px;
+        font-size: 2em;
+        margin-right: 15px;
+    }
+}
+@media (min-width: 370px) and (max-width: 625px) {
+    .setting_degrees {
+        padding: 18px 0;
+    }
+    .setting_degrees__radio_lab_1 {
+        padding-right: 26px;
+    }
+    .setting_degrees__radio_lab_2 {
+        margin-left: 21px;
+    }
+}

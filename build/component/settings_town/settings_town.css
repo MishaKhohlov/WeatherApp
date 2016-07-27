@@ -1,0 +1,179 @@
+.set_cities__town {
+  padding: 26px 0;
+  overflow: hidden;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.25);
+  cursor: pointer;
+}
+
+.set_cities__town:last-child {
+  border-bottom: none;
+}
+
+.set_cities__icon {
+  font-size: 4em;
+  line-height: 1.1em;
+  float: left;
+}
+
+.set_cities__temp {
+  margin-left: 4px;
+  font-size: 3.750em;
+  line-height: 1em;
+  width: 75px;
+  text-align: right;
+  float: left;
+}
+
+.set_cities__info {
+  float: left;
+  margin-left: 32px;
+  margin-top: 3px;
+}
+
+.set_cities__name {
+  font-size: 1.875em;
+  line-height: 80%;
+  margin-bottom: 14px;
+}
+
+.set_cities__weather {
+  font-size: 1.25em;
+  text-transform: uppercase;
+  line-height: 90%;
+}
+
+.set_cities__del_chex {
+  display: none;
+}
+
+.set_cities__label {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  background: black;
+  border-radius: 5px;
+  margin-top: 10px;
+  float: right;
+  margin-right: 55px;
+}
+
+.set_cities__label--hide {
+  display: none;
+}
+
+.set_cities__check_icon {
+  color: #ff4200;
+  font-size: 1.3em;
+  line-height: 30px;
+  opacity: 0;
+  transition: 0.3s linear all;
+  text-align: center;
+}
+
+.set_cities__del_chex:checked + .set_cities__label div.set_cities__check_icon {
+  opacity: 1;
+}
+
+@media (min-width: 375px) and (max-width: 1230px), (max-height: 900px) {
+  .set_cities__town {
+    padding: 19px 0;
+    overflow: hidden;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.25);
+  }
+
+  .set_cities__icon {
+    font-size: 2.5em;
+    line-height: 45px;
+    margin-left: 15px;
+  }
+
+  .set_cities__temp {
+    line-height: 0.9em;
+    width: 65px;
+  }
+
+  .set_cities__info {
+    float: left;
+    margin-left: 15px;
+    margin-top: 0;
+  }
+
+  .set_cities__name {
+    font-size: 1.875em;
+    line-height: 80%;
+    margin-bottom: 10px;
+  }
+
+  .set_cities__weather {
+    opacity: 0.8;
+  }
+
+  .set_cities__label {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 780px) {
+  .set_cities__label {
+    margin-right: 30px;
+  }
+
+  .set_cities__check_icon {
+    font-size: 1.5em;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: 626px) and (max-width: 740px) {
+  .set_cities__town {
+    padding: 10px 0;
+    overflow: hidden;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.25);
+  }
+
+  .set_cities__icon {
+    font-size: 2.5em;
+    line-height: 45px;
+    margin-left: 15px;
+  }
+
+  .set_cities__temp {
+    line-height: 1.1em;
+    width: 35px;
+  }
+
+  .set_cities__label {
+    width: 20px;
+    height: 20px;
+    margin-right: 25px;
+    font-size: 1em;
+  }
+
+  .set_cities__check_icon {
+    font-size: 1.4em;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: 370px) and (max-width: 625px) {
+  .set_cities__town {
+    padding: 10px;
+    margin-left: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  }
+
+  .set_cities__icon {
+    margin-left: 0;
+  }
+
+  .set_cities__temp {
+    width: 45px;
+    margin-top: 5px;
+  }
+
+  .set_cities__name {
+    line-height: 15px;
+    margin-top: 5px;
+  }
+}

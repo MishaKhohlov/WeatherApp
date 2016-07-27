@@ -1,0 +1,27 @@
+.set_cities {
+    height: 100%;
+    padding-left: 45px;
+}
+@media (min-width: 375px) and (max-width: 1230px), (max-height: 900px) {
+    .set_cities {
+        padding-left: 30px;
+    }
+}
+@media (min-width: 375px) and (max-width: 780px) {
+    .set_cities {
+        max-height: 670px;
+    }
+}
+@media (min-width: 626px) and (max-width: 740px) {
+    .set_cities {
+        width: 57.121%;
+        box-sizing: border-box;
+        height: 88.5%;
+        padding-left: 15px;
+    }
+}
+@media (min-width: 370px) and (max-width: 625px) {
+    .set_cities {
+        padding-left: 20px;
+    }
+}

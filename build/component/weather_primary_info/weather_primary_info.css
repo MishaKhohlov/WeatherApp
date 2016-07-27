@@ -1,0 +1,226 @@
+.weather_refresh {
+    display: flex;
+}
+
+.weather_refresh__time {
+    font-size: 1.875em;
+    line-height: 0.98em;
+}
+
+.weather_refresh__time_icon {
+    margin-left: 10px;
+    opacity: 0.8;
+    cursor: pointer;
+    font-size: 1.7em;
+    line-height: 1.15em;
+    transition: 0.2s linear all;
+}
+
+.weather_refresh__time_icon:hover {
+    opacity: 1;
+}
+
+.weather_city {
+    margin-top: 19px;
+    font-weight: 100;
+    font-size: 4.688em;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    line-height: 80%;
+}
+
+.weather_data {
+    margin-left: 2px;
+    margin-top: 16px;
+    font-weight: 100;
+    font-size: 2.500em;
+    letter-spacing: .216em;
+    text-transform: uppercase;
+    line-height: 80%;
+}
+
+.weather_details {
+    display: flex;
+    position: relative;
+    margin-top: 75px;
+    padding-bottom: 67px;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.25);
+}
+
+.weather_details__icons {
+    margin-left: 22px;
+    margin-right: 33px;
+    display: block;
+    font-size: 6.625em;
+    height: 112px;
+}
+
+.weather_details__temp {
+    margin-bottom: 14px;
+    font-size: 6.250em;
+    line-height: 80%;
+}
+
+.weather_details__slash {
+    margin-left: 1em;
+}
+
+.weather_details__slash, .weather_details__inform_desc {
+    font-size: 1.250em;
+    line-height: 80%;
+    text-transform: uppercase;
+}
+
+.weather_details__sunrise {
+    position: absolute;
+    right: 40px;
+}
+
+.weather_details__sunrise_icon {
+    margin-top: 14px;
+    font-size: 5em;
+}
+
+.weather_details__phase_moon {
+    margin-top: 10px;
+    /*padding-left: 10px;*/
+    font-size: 1.875em;
+    line-height: 80%;
+}
+
+@media (min-width: 375px) and (max-width: 1230px), (max-height: 900px) {
+    .weather_refresh__time_icon {
+        margin-left: 13px;
+    }
+
+    .weather_city {
+        margin-top: 8px;
+    }
+
+    .weather_data {
+        margin-top: 10px;
+    }
+
+    .weather_details {
+        margin-top: 60px;
+        padding: 6px;
+    }
+
+    .weather_details__icons {
+        margin-left: 9px;
+        margin-right: 25px;
+    }
+
+    .weather_details__sunrise {
+        position: absolute;
+        right: 23px;
+    }
+
+    .weather_details__sunrise_icon {
+        margin-top: 4px;
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .weather_details__phase_moon {
+        margin-top: 40px;
+        font-size: 1.875em;
+        line-height: 80%;
+    }
+
+    .weather_details__phase_moon {
+        width: 40px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 780px) {
+    .weather_refresh {
+        padding-left: 7px;
+    }
+
+    .weather_refresh__time_icon {
+        margin-left: 9px;
+    }
+
+    .weather_city {
+        padding-left: 6px;
+    }
+
+    .weather_data {
+        padding-left: 6px;
+        margin-top: 7px;
+        letter-spacing: 3px;
+    }
+
+    .weather_details {
+        margin-top: 70px;
+        padding: 0;
+        padding-bottom: 18px;
+    }
+
+    .weather_details__icons {
+        margin-left: 20px;
+    }
+
+    .weather_details__sunrise {
+        right: 0;
+    }
+
+    .weather_details__sunrise_icon {
+        font-size: 2.2em;
+        text-align: right;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 740px) {
+    .weather_details {
+        border-bottom: 0;
+        margin-top: 37px;
+    }
+    .weather_refresh {
+        padding-left: 0;
+    }
+
+    .weather_refresh__time_icon {
+        margin-left: 7px;
+    }
+
+    .weather_city {
+        padding: 0;
+        margin-top: 3px;
+    }
+
+    .weather_data {
+        padding: 0;
+        margin-top: 4px;
+    }
+
+
+    .weather_details__icons {
+        margin-left: 9px;
+        margin-right: 25px;
+    }
+
+    .weather_details__sunrise {
+        right: 15px;
+    }
+
+    .weather_details__sunrise_icon {
+        text-align: right;
+    }
+
+    .weather_details__phase_moon {
+        margin-top: 33px;
+    }
+
+    .weather_details__phase_moon {
+        width: 30px;
+        text-align: right;
+    }
+}
+@media (min-width: 370px) and (max-width: 625px) {
+    .weather_details {
+        padding-bottom: 4px;
+    }
+}

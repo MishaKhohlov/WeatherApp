@@ -1,0 +1,207 @@
+.days_inf {
+  display: flex;
+  padding: 40px 0;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.25);
+  box-sizing: border-box;
+}
+
+.days_inf:last-child {
+  border-bottom: none;
+}
+
+.days_inf__day_week {
+  font-size: 2.188em;
+  text-transform: uppercase;
+  line-height: 80%;
+  width: 85px;
+}
+
+.days_inf__icon {
+  font-size: 2em;
+  margin-left: 15px;
+}
+
+.days_inf__tempRange {
+  position: absolute;
+  height: 30px;
+  min-width: 25px;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.days_inf__tempCont {
+  margin-left: 60px;
+  position: relative;
+  width: 200px;
+  height: 30px;
+}
+
+.days_inf__tempRange span {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  width: 40px;
+  font-size: 1.875em;
+  line-height: 30px;;
+}
+
+.days_inf__val_min {
+  left: -48px;
+  text-align: right;
+}
+
+.days_inf__val_max {
+  right: -48px;
+  text-align: left;
+}
+
+@media (min-width: 375px) and (max-width: 1230px), (max-height: 900px) {
+  .days_inf {
+    padding: 26.5px 0;
+  }
+
+  .days_inf__day_week {
+    line-height: 120%;
+    width: 65px;
+  }
+
+  .days_inf__icon {
+    margin-left: 0;
+  }
+
+  .days_inf__tempRange {
+    position: absolute;
+    height: 22px;
+    min-width: 25px;
+    border-radius: 20px;
+    background-color: white;
+  }
+
+  .days_inf__tempCont {
+    margin-top: 5px;
+    margin-left: 60px;
+    width: 150px;
+    height: 22px;
+  }
+
+  .days_inf__tempRange span {
+    line-height: 22px;
+  }
+
+  .days_inf__val_min {
+    left: -48px;
+    text-align: right;
+  }
+
+  .days_inf__val_max {
+    right: -48px;
+    text-align: left;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 780px) {
+  .days_inf__icon {
+    margin-left: 5px;
+  }
+
+  .days_inf__tempCont {
+    margin-left: 45px;
+    width: 100px;
+  }
+}
+
+/* important because higher priority than inline style*/
+@media (min-width: 741px) {
+  .days_inf__tempRange {
+    top: 0 !important;
+    bottom: 0 !important;
+  }
+}
+
+@media (min-width: 370px) and (max-width: 625px) {
+  .days_inf__tempRange {
+    top: 0 !important;
+    bottom: 0 !important;
+  }
+}
+
+@media (min-width: 626px) and (max-width: 740px) {
+  .days_inf {
+    flex-direction: column;
+    padding: 0;
+    padding-top: 10px;
+    width: 50px;
+    border-bottom: none;
+    position: relative;
+  }
+
+  .days_inf__day_week {
+    width: 100%;
+    text-align: center;
+  }
+
+  .days_inf__icon {
+    font-size: 2em;
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+    margin-top: 7px;
+  }
+
+  .days_inf__tempCont {
+    top: 100px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    position: absolute;
+    width: 20px;
+    height: 140px;
+  }
+
+  .days_inf__tempRange {
+    position: absolute;
+    min-width: 20px;
+    height: auto;
+    min-height: 40px;
+    border-radius: 20px;
+    background-color: white;
+  }
+
+  .days_inf__tempRange span {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+  }
+
+  /* important because higher priority than inline style*/
+  .days_inf__tempRange {
+    left: 0 !important;
+    right: 0 !important;
+  }
+
+  .days_inf__val_min {
+    left: 0;
+    top: -30px !important;
+    text-align: center;
+  }
+
+  .days_inf__val_max {
+    right: 0;
+    top: 100% !important;
+    text-align: center;
+  }
+
+}
+
+@media (min-width: 370px) and (max-width: 625px) {
+  .days_inf__tempCont {
+    margin-left: 35px;
+    width: 80px;
+  }
+
+  .days_inf {
+    padding: 23px 0;
+  }
+}

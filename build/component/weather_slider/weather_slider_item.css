@@ -1,0 +1,122 @@
+/*item content*/
+.scroll-content-item:nth-child(1) {
+    margin-left: 40px;
+}
+
+.scroll-content-item {
+    width: 60px;
+    height: 135px;
+    float: left;
+    margin-right: 100px;
+}
+
+.scroll-content-item:last-child {
+    margin-right: 40px;
+}
+
+.item_day_time__time {
+    text-align: center;
+    font-size: 1.250em;
+}
+.item_day_time__icon {
+    margin-top: 16px;
+    font-size: 2.6em;
+    line-height: 80%;
+    text-align: center;
+
+}
+
+.item_day_time__temp {
+    margin-top: 23px;
+    font-size: 2.5em;
+    line-height: 80%;
+    font-weight: 100;
+}
+@media (min-width: 375px) and (max-width: 1230px), (max-height: 900px) {
+    /*item content*/
+    .scroll-content-item:nth-child(1) {
+        margin-left: 10px;
+    }
+
+    .scroll-content-item {
+        margin-right: 60px;
+        height: 100px;
+    }
+
+    .scroll-content-item:last-child {
+        margin-right: 10px;
+    }
+
+    .item_day_time__icon {
+        margin-top: 13px;
+        text-align: center;
+    }
+
+    .item_day_time__temp {
+        margin-top: 18px;
+        text-align: center;
+    }
+}
+@media (min-width: 375px) and (max-width: 780px) {
+    /*item content*/
+    .scroll-content-item:nth-child(1) {
+        margin-left: 10px;
+    }
+    .scroll-content-item {
+        width: 40px;
+        margin-right: 50px;
+        height: 100px;
+    }
+
+    .scroll-content-item:last-child {
+        margin-right: 10px;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 740px) {
+    .scroll-content-item {
+        margin-right: 35px;
+    }
+
+    .item_day_time__temp {
+        margin-top: 16px;
+    }
+
+    .weather_contInf {
+        max-width: 285px;;
+        padding: 0 10px;
+    }
+
+    .weather_contInf_inf {
+        margin-top: 0;
+    }
+
+    .weather_contInf_inf_icon {
+        text-align: center;
+        font-size: 3.375em;
+    }
+
+    .weather_contInf_inf_icon_direction {
+        margin-top: -5px;
+        margin-left: 15px;
+        height: 43px;
+    }
+
+    .icon-sunset, .icon-sunrise {
+        margin-left: 0;
+        font-size: 3em;
+    }
+
+    .weather_contInf_inf_sunrice,
+    .weather_contInf_inf_sunset,
+    .weather_contInf_inf_wet,
+    .weather_contInf_inf_windy {
+        margin-top: 15px;
+    }
+
+    .weather_contInf_inf_sunrice,
+    .weather_contInf_inf_sunset {
+        margin-top: -3px;
+        width: 60px;
+    }
+}

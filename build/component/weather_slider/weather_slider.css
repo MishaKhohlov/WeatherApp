@@ -1,0 +1,126 @@
+
+.weather_slider {
+  margin-top: 30px;
+}
+
+/*------------------------------jQuery UI Slider style--------------------------------*/
+
+/*scroll block*/
+.scroll-pane {
+  overflow: hidden;
+}
+
+/*scroll content*/
+.scroll-content {
+  float: left;
+  display: flex;
+  margin-bottom: 34px;
+}
+
+.scroll-bar-wrap {
+  background: rgba(0, 0, 0, 0.05);
+  clear: left;
+}
+
+/*scroll line*/
+.scroll-bar-wrap .ui-slider {
+  background: none;
+  border: 0;
+  height: 12px;
+  margin: 0 auto;
+}
+
+/*dont use*/
+.scroll-bar-wrap .ui-handle-helper-parent {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+/*scroll poin*/
+.scroll-bar-wrap .ui-slider-handle {
+  height: 10px;
+  top: 0;
+  background: white;
+  border-radius: 3px;
+  cursor: pointer;
+  z-index: 30;
+}
+
+/*dont use*/
+.scroll-bar-wrap .ui-slider-handle .ui-icon {
+  display: none;
+}
+
+/*------------------------------jQuery UI Slider style---end--------------------------*/
+
+@media (min-width: 375px) and (max-width: 1230px), (max-height: 900px) {
+  .weather_slider {
+    margin-top: 0;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.25);
+    padding: 25px 0;
+    margin-bottom: 35px;
+  }
+
+  .weather_scrollBar {
+    /*display: none;*/
+  }
+
+  .scroll-content {
+    margin-bottom: 0;
+  }
+
+  .scroll-bar-wrap {
+    background: none;
+  }
+
+  .weather_slider .scroll-bar {
+    top: 22px;
+  }
+  .weather_slider .scroll-bar-wrap .ui-slider-handle {
+    opacity: 0.8;
+    height: 8px;
+  }
+  .weather_slider .scroll-bar-wrap .ui-slider {
+    height: 8px;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 780px) {
+  .weather_slider {
+    margin-top: 0;
+    padding: 18px 0;
+  }
+  .weather_slider .scroll-bar {
+    top: 15px;
+  }
+  .bx-wrapper .bx-viewport {
+    padding-right: 3px;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 740px) {
+  .weather_slider {
+    padding-top: 3px;
+    padding-bottom: 10px;
+    margin-bottom: 27px;
+  }
+  .weather_slider .scroll-bar {
+    top: 8px;
+  }
+  .weather_slider .scroll-bar-wrap .ui-slider-handle {
+    height: 5px;
+  }
+  .weather_slider .scroll-bar-wrap .ui-slider {
+    height: 5px;
+  }
+}
+
+@media (min-width: 370px) and (max-width: 625px) {
+  .weather_slider {
+    border-top: 2px solid rgba(255, 255, 255, 0.25);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.25);
+    padding-top: 15px;
+  }
+}

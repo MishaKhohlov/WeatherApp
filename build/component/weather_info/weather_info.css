@@ -1,0 +1,138 @@
+.weather_info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  padding-left: 36px;
+  padding-right: 24px
+}
+
+.weather_info__section {
+  margin-top: 54px;
+}
+
+.weather_info__icon {
+  text-align: center;
+  font-size: 3.375em;
+  position: relative;
+}
+
+.weather_info__icon_direction {
+  margin-top: -12px;
+  margin-bottom: -4px;
+  font-size: 1.3em;
+}
+
+.icon_direction__value {
+  position: absolute;
+  top: 31px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  font-size: 0.22em;
+}
+
+.icon-sunset, .icon-sunrise {
+  margin-bottom: 20px;
+  font-size: 3em;
+}
+
+.weather_info__sunrice,
+.weather_info__sunset,
+.weather_info__wet,
+.weather_info__windy {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 2.500em;
+  line-height: 80%;
+}
+
+.weather_info__pre_windy {
+  font-size: 0.5em;
+  vertical-align: top;
+  line-height: 80%;
+}
+
+@media (min-width: 375px) and (max-width: 1230px), (max-height: 900px) {
+  .weather_info {
+    padding: 0 16px;
+  }
+
+  .weather_info__section {
+    margin-top: 3px;
+  }
+
+  .weather_info__icon {
+    text-align: center;
+    font-size: 3.375em;
+  }
+
+  .weather_info__icon_direction {
+    margin-left: 15px;
+    height: 56px;
+  }
+
+  .icon_direction__value {
+    top: 24px;
+    right: -15px;
+  }
+
+  .icon-sunset, .icon-sunrise {
+    font-size: 3em;
+  }
+
+  .weather_info__sunrice,
+  .weather_info__sunset,
+  .weather_info__wet,
+  .weather_info__windy {
+    margin-top: 15px;
+  }
+
+  .weather_info__sunrice,
+  .weather_info__sunset {
+    margin-top: -3px;
+    width: 60px;
+  }
+
+  .weather_info__pre_windy {
+    font-size: 0.5em;
+    vertical-align: top;
+    line-height: 80%;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 780px) {
+  .weather_info {
+    padding: 0 7px;
+  }
+
+  .weather_info__section {
+    margin-top: 3px;
+  }
+
+  .weather_info__icon {
+    text-align: center;
+    font-size: 3.375em;
+  }
+
+  .weather_info__icon_direction {
+    margin-left: 30px;
+  }
+  .icon_direction__value {
+    top: 20px;
+    right: -29px;
+  }
+  .icon-sunset, .icon-sunrise {
+    font-size: 3em;
+  }
+
+  .weather_info__sunrice,
+  .weather_info__sunset,
+  .weather_info__wet,
+  .weather_info__windy {
+    margin-top: 15px;
+  }
+
+  .weather_info__windy {
+    text-align: right;
+  }
+}

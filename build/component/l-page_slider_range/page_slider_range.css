@@ -1,0 +1,68 @@
+.bx-pager {
+    left: 0;
+    right: 0;
+    bottom: 5%;
+    margin: 0 auto;
+    position: absolute;
+    text-align: center;
+    z-index: 90;
+}
+
+.bx-pager-link {
+    border: 3px solid white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: block;
+    text-indent: -9999px;
+}
+
+.bx-pager-item {
+    margin-right: 15px;
+}
+
+.bx-pager-item:last-child {
+    margin-right: 0;
+}
+
+.bx-pager-item a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.bx-pager-item a.active {
+    background: white;
+}
+
+@media (min-width: 375px) and (max-width: 1230px), (max-height: 900px){
+    .bx-pager-link {
+        border: 1px solid white;
+        width: 15px;
+        height: 15px;
+    }
+}
+@media (min-width: 375px) and (max-width: 780px) {
+    .bx-pager {
+        bottom: 14.8%;
+    }
+}
+@media (min-width: 375px) and (max-width: 740px) {
+    .bx-pager {
+        bottom: 100px;
+    }
+}
+@media (min-width: 370px) and (max-width: 625px) {
+    .bx-pager {
+        left: 0;
+        right: 0;
+        top: 83.5%;
+        margin: 0 auto;
+
+    }
+    .bx-pager-link {
+        border: 1px solid white;
+        width: 13px;
+        height: 13px;
+    }
+}
