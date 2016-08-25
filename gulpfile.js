@@ -23,8 +23,8 @@ gulp.task('es6', function () {
     .bundle()
     .on('error', gutil.log)
     .pipe(source('script.min.js'))
-    .pipe(streamify(stripDebug()))
-    .pipe(streamify(uglify()))
+    // .pipe(streamify(stripDebug()))
+    // .pipe(streamify(uglify()))
     .pipe(gulp.dest('dist/script/'));
 });
 
@@ -62,9 +62,9 @@ gulp.task('img', function () {
 
 gulp.task('css', function () {
   gulp.src([
-      'build/font/**/*.css',
-      'build/component/**/*.css'
-    ])
+    'build/font/**/*.css',
+    'build/component/**/*.css'
+  ])
     .pipe(concat('style.min.css'))
     .pipe(gcmq())
     .pipe(autoprefixer({
@@ -84,18 +84,18 @@ gulp.task('css_libs', function () {
 
 gulp.task('libs', function () {
   gulp.src([
-      libs + 'jquery.js',
-      libs + 'jquery-ui.js',
-      libs + 'moment.js',
-      libs + 'moment-timezone.js',
-      libs + 'hammer.min.js',
-      libs + 'jquery.hammer.js',
-      libs + 'jquery.bxslider.js',
-      libs + 'jquery.custom-scroll.js',
-      libs + 'jquery.ui.touch-punch.js',
-      libs + 'underscore.js',
-      libs + 'backbone.js'
-    ])
+    libs + 'jquery.js',
+    libs + 'jquery-ui.js',
+    libs + 'moment.js',
+    libs + 'moment-timezone.js',
+    libs + 'hammer.min.js',
+    libs + 'jquery.hammer.js',
+    libs + 'jquery.bxslider.js',
+    libs + 'jquery.custom-scroll.js',
+    libs + 'jquery.ui.touch-punch.js',
+    libs + 'underscore.js',
+    libs + 'backbone.js'
+  ])
     .pipe(concat('libs.js'))
     .pipe(uglify())
     .pipe(gulp.dest('dist/script/'));
